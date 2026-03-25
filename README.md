@@ -21,17 +21,16 @@ gcc lex.yy.c -o lexer.exe
 
 Usei um programa genérico de Fibonacci como entrada (test.c).
 
-O resultado esperado do lexer é:
-[L1]   KW(int) ID(fib) DELIM(() KW(int) ID(n) DELIM()) DELIM({) 
-[L2]   KW(if) DELIM(() ID(n) RELOP(<=) DEC(1) DELIM()) DELIM({)
-[L3]   KW(return) ID(n) DELIM(;)
-[L4]   DELIM(}) KW(else) DELIM({)
-[L5]   KW(return) ID(fib) DELIM(() ID(n) OP(-) DEC(1) DELIM()) OP(+) ID(fib) DELIM(() ID(n) OP(-) DEC(2) DELIM()) DELIM(;)
-[L6]   DELIM(})
-[L7]   DELIM(})
-
-[L8]   KW(int) ID(main) DELIM(() DELIM()) DELIM({)
-[L9]   KW(int) ID(resultado) RELOP(=) ID(fib) DELIM(() DEC(5) DELIM()) DELIM(;)
-[L10]  KW(return) DEC(0) DELIM(;)
-[L11]  DELIM(})
-
+#### O resultado esperado do lexer é:<br><br>
+[L1]   KW(int) ID(fib) DELIM(() KW(int) ID(n) DELIM()) DELIM({)<br>
+[L2]   KW(if) DELIM(() ID(n) RELOP(<=) DEC(1) DELIM()) DELIM({)<br>
+[L3]   KW(return) ID(n) DELIM(;)<br>
+[L4]   DELIM(}) KW(else) DELIM({)<br>
+[L5]   KW(return) ID(fib) DELIM(() ID(n) OP(-) DEC(1) DELIM()) OP(+) ID(fib) DELIM(() ID(n) OP(-) DEC(2) DELIM()) DELIM(;)<br>
+[L6]   DELIM(})<br>
+[L7]   DELIM(})<br>
+<br>
+[L8]   KW(int) ID(main) DELIM(() DELIM()) DELIM({)<br>
+[L9]   KW(int) ID(resultado) RELOP(=) ID(fib) DELIM(() DEC(5) DELIM()) DELIM(;)<br>
+[L10]  KW(return) DEC(0) DELIM(;)<br>
+[L11]  DELIM(})<br>
