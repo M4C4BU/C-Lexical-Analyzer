@@ -1,4 +1,4 @@
-# C Lexical Analyzer
+# Analisador Léxico
 
 Este é um analisador lexical simples em C usando **Flex**.
 
